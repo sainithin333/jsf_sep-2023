@@ -40,3 +40,4 @@ build/
 /workspace.xml
 misc.xml
 encodings.xml
+.idea
