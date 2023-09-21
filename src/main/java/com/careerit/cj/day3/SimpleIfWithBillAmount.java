@@ -11,7 +11,7 @@ public class SimpleIfWithBillAmount {
 
         double discount = 0;
         if(billAmount >= 1000){
-            discount = billAmount * (10 / 100);
+            discount = billAmount * (10 / (double)100);
         }
         double netAmount = billAmount - discount;
         System.out.println("Bill Amount :"+billAmount);
