@@ -17,7 +17,7 @@ public class Account {
             balance -= amount;
             System.out.println("Amount " + amount + " is debited from your account; balance is :" + balance);
         } else {
-            System.out.println("Sorry! Insufficient funds");
+            System.out.println("Sorry! Insufficient funds, your balance is :" + balance + " and you are trying to withdraw :" + amount);
         }
     }
 
