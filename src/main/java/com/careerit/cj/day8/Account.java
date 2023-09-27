@@ -16,9 +16,8 @@ public class Account {
         if (amount <= balance) {
             balance -= amount;
             System.out.println("Amount " + amount + " is debited from your account; balance is :" + balance);
-        } else {
-            System.out.println("Sorry! Insufficient funds, your balance is :" + balance + " and you are trying to withdraw :" + amount);
         }
+        throw new IllegalArgumentException("Sorry! Insufficient funds, your balance is :" + balance + " and you are trying to withdraw :" + amount);
     }
 
     public void deposit(double amount) {
